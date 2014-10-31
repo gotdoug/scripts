@@ -1,4 +1,4 @@
-backup_scripts
+generic scripts
 ==============
 
 Collection of custom scripts that I have written
