@@ -12,6 +12,7 @@ numBackups=6
 if [[ $(date +"%u") -eq 6 ]]
 then
     ## Saturday is the rotation day, so rotate to the next directory for "full" backups
+    ## Doing this because backups directories start at 0 and not 1
     oldestBackup=$(expr ${numBackups} - 1)
     ## Remove oldest backup
     rm -rf ${backDir}/backup-${oldestBackup}
