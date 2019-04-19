@@ -1,14 +1,14 @@
 #!/bin/bash
 ########################################################################################################################
 ## Script Name       : check_cpu_threads.sh
-## Description       : Nagios Plugin to monitor worker queue sizes for Tesla and FIU
+## Description       : Nagios Plugin to monitor number of cpu threads currently running
 ## Notes/Args        : # Nagios exit codes:
 ##                         STATE_OK=0
 ##                         STATE_WARNING=1
 ##                         STATE_CRITICAL=2
 ##                         STATE_UNKNOWN=3
 ##                         STATE_DEPENDENT=4
-## Author            : Doug Corwine [douglas_corwine@comcast.com]
+## Author            : Doug Corwine [@gotdoug]
 ##
 ## Usage example: check_cpu_threads.sh -w 2000 -c 4000
 ########################################################################################################################
