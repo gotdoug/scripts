@@ -328,7 +328,7 @@ function installCommonPackages () {
 function installNrpe () {
     ## menu option 18
     ## Check if we have the correct repo available
-    CHK_REPO=$(um -C repolist | grep -c epel)
+    CHK_REPO=$(yum -C repolist | grep -c epel)
     if [[ ${CHK_REPO} -ge 1 ]]
     then
         yum --assumeyes install nrpe nagios-plugins-nrpe nagios-plugins-all
